@@ -870,6 +870,11 @@ public function getsinglevideogallery()
         $data['message'] = $this->restapi_model->getSchedulenew();
         $this->load->view('json', $data);
     }
+    public function getScheduleForApp()
+    {
+        $data['message'] = $this->restapi_model->getSchedulenewForApp();
+        $this->load->view('json', $data);
+    }
     public function getScheduleForIosAndroidSeason4()
     {
         $data['message'] = $this->restapi_model->getScheduleForIosAndroidSeason4();
